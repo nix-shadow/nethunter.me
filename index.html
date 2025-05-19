@@ -3,16 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
+    <title>nix-shadow - Cybersecurity Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+<div class="terminal-overlay"></div>
+
 <header>
     <div class="container">
         <nav>
-            <div class="logo">Portfolio</div>
+            <div class="logo"><span class="terminal-prompt">$</span> nix-shadow</div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -32,12 +34,29 @@
 <section id="home" class="hero">
     <div class="container">
         <div class="hero-content">
-            <h1>Hello, I'm <span class="highlight">Your Name</span></h1>
-            <p class="hero-subtitle">Full-Stack Developer & Designer</p>
-            <p class="hero-description">I build exceptional digital experiences that live at the intersection of design and technology.</p>
-            <div class="cta-buttons">
-                <a href="#projects" class="btn primary-btn">View My Work</a>
-                <a href="#contact" class="btn secondary-btn">Contact Me</a>
+            <div class="terminal-window">
+                <div class="terminal-header">
+                    <div class="terminal-buttons">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="terminal-title">nix-shadow@terminal:~</div>
+                </div>
+                <div class="terminal-body">
+                    <p><span class="terminal-prompt">$</span> whoami</p>
+                    <p class="terminal-response">nix-shadow</p>
+                    <p><span class="terminal-prompt">$</span> cat introduction.txt</p>
+                    <p class="terminal-response">Hello, I'm <span class="highlight">nix-shadow</span></p>
+                    <p class="terminal-response terminal-subtitle">Cybersecurity Analyst & Ethical Hacker</p>
+                    <p class="terminal-response terminal-description">I secure systems, hunt vulnerabilities, and protect digital infrastructures.</p>
+                    <p><span class="terminal-prompt">$</span> ./show_options.sh</p>
+                    <div class="cta-buttons">
+                        <a href="#projects" class="btn primary-btn">View My Work</a>
+                        <a href="#contact" class="btn secondary-btn">Contact Me</a>
+                    </div>
+                    <p><span class="terminal-prompt blink">$</span> _</p>
+                </div>
             </div>
         </div>
     </div>
@@ -49,16 +68,21 @@
         <div class="about-content">
             <div class="about-image">
                 <img src="https://via.placeholder.com/300" alt="Profile Picture">
+                <div class="security-badges">
+                    <span><i class="fas fa-shield-alt"></i> CEH</span>
+                    <span><i class="fas fa-lock"></i> Security+</span>
+                </div>
             </div>
             <div class="about-text">
-                <p>Welcome to my portfolio! I'm a passionate developer with experience in creating modern web applications. I have a strong background in both front-end and back-end technologies.</p>
-                <p>With a focus on clean code and user-centered design, I strive to build applications that not only function well but also provide an enjoyable user experience.</p>
-                <p>When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or enjoying the outdoors.</p>
+                <p>Welcome to my cybersecurity portfolio! I'm a dedicated security professional with a passion for protecting digital assets and identifying vulnerabilities before malicious actors can exploit them.</p>
+                <p>With expertise in penetration testing, network security, and security analysis, I approach cybersecurity challenges with both analytical rigor and creative problem-solving.</p>
+                <p>My background includes hands-on experience with SIEM tools, vulnerability assessment, and implementing security best practices. I stay current with the latest threat intelligence and continuously participate in CTF competitions and security research.</p>
                 <div class="social-links">
-                    <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://twitter.com/yourusername" target="_blank"><i class="fab fa-twitter"></i></a>
-                    <a href="mailto:your.email@example.com"><i class="fas fa-envelope"></i></a>
+                    <a href="https://github.com/nix-shadow" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/nix-shadow" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://twitter.com/nix_shadow" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://tryhackme.com/p/nix-shadow" target="_blank" title="TryHackMe"><i class="fas fa-flag"></i></a>
+                    <a href="https://hackthebox.com/profile/nix-shadow" target="_blank" title="HackTheBox"><i class="fas fa-cube"></i></a>
                 </div>
             </div>
         </div>
@@ -70,45 +94,45 @@
         <h2 class="section-title">My Skills</h2>
         <div class="skills-container">
             <div class="skill-category">
-                <h3>Frontend</h3>
+                <h3>Offensive Security</h3>
                 <div class="skill-items">
                     <div class="skill-item">
-                        <div class="skill-name">HTML/CSS</div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 90%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-name">JavaScript</div>
+                        <div class="skill-name">Penetration Testing</div>
                         <div class="skill-bar">
                             <div class="skill-progress" style="width: 85%"></div>
                         </div>
                     </div>
                     <div class="skill-item">
-                        <div class="skill-name">React</div>
+                        <div class="skill-name">Vulnerability Analysis</div>
                         <div class="skill-bar">
                             <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">Web App Security</div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%"></div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="skill-category">
-                <h3>Backend</h3>
+                <h3>Defensive Security</h3>
                 <div class="skill-items">
                     <div class="skill-item">
-                        <div class="skill-name">Node.js</div>
+                        <div class="skill-name">SIEM & Log Analysis</div>
                         <div class="skill-bar">
-                            <div class="skill-progress" style="width: 75%"></div>
+                            <div class="skill-progress" style="width: 80%"></div>
                         </div>
                     </div>
                     <div class="skill-item">
-                        <div class="skill-name">Python</div>
+                        <div class="skill-name">Incident Response</div>
                         <div class="skill-bar">
                             <div class="skill-progress" style="width: 70%"></div>
                         </div>
                     </div>
                     <div class="skill-item">
-                        <div class="skill-name">SQL</div>
+                        <div class="skill-name">Security Architecture</div>
                         <div class="skill-bar">
                             <div class="skill-progress" style="width: 65%"></div>
                         </div>
@@ -116,24 +140,24 @@
                 </div>
             </div>
             <div class="skill-category">
-                <h3>Tools & Others</h3>
+                <h3>Tools & Technologies</h3>
                 <div class="skill-items">
                     <div class="skill-item">
-                        <div class="skill-name">Git</div>
+                        <div class="skill-name">Kali Linux / Tools</div>
                         <div class="skill-bar">
-                            <div class="skill-progress" style="width: 85%"></div>
+                            <div class="skill-progress" style="width: 90%"></div>
                         </div>
                     </div>
                     <div class="skill-item">
-                        <div class="skill-name">Docker</div>
+                        <div class="skill-name">Python / Bash Scripting</div>
                         <div class="skill-bar">
-                            <div class="skill-progress" style="width: 60%"></div>
+                            <div class="skill-progress" style="width: 75%"></div>
                         </div>
                     </div>
                     <div class="skill-item">
-                        <div class="skill-name">AWS</div>
+                        <div class="skill-name">Wireshark / Network Analysis</div>
                         <div class="skill-bar">
-                            <div class="skill-progress" style="width: 50%"></div>
+                            <div class="skill-progress" style="width: 80%"></div>
                         </div>
                     </div>
                 </div>
@@ -151,16 +175,16 @@
                     <img src="https://via.placeholder.com/350x200" alt="Project 1">
                 </div>
                 <div class="project-info">
-                    <h3>Project Name 1</h3>
-                    <p>A brief description of the project. What technologies were used and what problems were solved.</p>
+                    <h3>Network Intrusion Detection System</h3>
+                    <p>Designed and implemented a custom IDS using Python and machine learning to detect unusual network patterns and potential threats in real-time.</p>
                     <div class="project-tags">
-                        <span>React</span>
-                        <span>Node.js</span>
-                        <span>MongoDB</span>
+                        <span>Python</span>
+                        <span>Machine Learning</span>
+                        <span>Network Security</span>
                     </div>
                     <div class="project-links">
-                        <a href="#" class="btn small-btn" target="_blank">Live Demo</a>
-                        <a href="#" class="btn small-btn secondary-btn" target="_blank">Source Code</a>
+                        <a href="#" class="btn small-btn" target="_blank">Demo</a>
+                        <a href="#" class="btn small-btn secondary-btn" target="_blank">GitHub</a>
                     </div>
                 </div>
             </div>
@@ -170,16 +194,16 @@
                     <img src="https://via.placeholder.com/350x200" alt="Project 2">
                 </div>
                 <div class="project-info">
-                    <h3>Project Name 2</h3>
-                    <p>A brief description of the project. What technologies were used and what problems were solved.</p>
+                    <h3>Vulnerability Scanner</h3>
+                    <p>Built an automated vulnerability scanner that identifies common security flaws in web applications, with detailed reporting and remediation recommendations.</p>
                     <div class="project-tags">
-                        <span>Vue.js</span>
-                        <span>Express</span>
-                        <span>PostgreSQL</span>
+                        <span>Go</span>
+                        <span>OWASP</span>
+                        <span>Vulnerability Assessment</span>
                     </div>
                     <div class="project-links">
-                        <a href="#" class="btn small-btn" target="_blank">Live Demo</a>
-                        <a href="#" class="btn small-btn secondary-btn" target="_blank">Source Code</a>
+                        <a href="#" class="btn small-btn" target="_blank">Demo</a>
+                        <a href="#" class="btn small-btn secondary-btn" target="_blank">GitHub</a>
                     </div>
                 </div>
             </div>
@@ -189,17 +213,57 @@
                     <img src="https://via.placeholder.com/350x200" alt="Project 3">
                 </div>
                 <div class="project-info">
-                    <h3>Project Name 3</h3>
-                    <p>A brief description of the project. What technologies were used and what problems were solved.</p>
+                    <h3>Security Awareness Training</h3>
+                    <p>Developed an interactive phishing simulation platform to train employees on recognizing and responding to social engineering attempts.</p>
                     <div class="project-tags">
-                        <span>Python</span>
-                        <span>Django</span>
+                        <span>JavaScript</span>
                         <span>React</span>
+                        <span>Social Engineering</span>
                     </div>
                     <div class="project-links">
-                        <a href="#" class="btn small-btn" target="_blank">Live Demo</a>
-                        <a href="#" class="btn small-btn secondary-btn" target="_blank">Source Code</a>
+                        <a href="#" class="btn small-btn" target="_blank">Demo</a>
+                        <a href="#" class="btn small-btn secondary-btn" target="_blank">GitHub</a>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="certifications" class="certifications">
+    <div class="container">
+        <h2 class="section-title">Certifications & Achievements</h2>
+        <div class="cert-timeline">
+            <div class="cert-item">
+                <div class="cert-icon"><i class="fas fa-shield-alt"></i></div>
+                <div class="cert-content">
+                    <h3>Certified Ethical Hacker (CEH)</h3>
+                    <p class="cert-date">2024</p>
+                    <p>Achieved certification in ethical hacking methodologies and techniques.</p>
+                </div>
+            </div>
+            <div class="cert-item">
+                <div class="cert-icon"><i class="fas fa-lock"></i></div>
+                <div class="cert-content">
+                    <h3>CompTIA Security+</h3>
+                    <p class="cert-date">2023</p>
+                    <p>Demonstrated foundational knowledge of security concepts, tools, and procedures.</p>
+                </div>
+            </div>
+            <div class="cert-item">
+                <div class="cert-icon"><i class="fas fa-network-wired"></i></div>
+                <div class="cert-content">
+                    <h3>Cisco Certified Network Associate (CCNA)</h3>
+                    <p class="cert-date">2022</p>
+                    <p>Mastered networking fundamentals with a focus on network security implementations.</p>
+                </div>
+            </div>
+            <div class="cert-item">
+                <div class="cert-icon"><i class="fas fa-flag"></i></div>
+                <div class="cert-content">
+                    <h3>Capture The Flag Competitions</h3>
+                    <p class="cert-date">Ongoing</p>
+                    <p>Active participant in various CTF competitions with notable rankings on TryHackMe and HackTheBox platforms.</p>
                 </div>
             </div>
         </div>
@@ -215,21 +279,21 @@
                     <i class="fas fa-envelope"></i>
                     <div>
                         <h3>Email</h3>
-                        <p><a href="mailto:your.email@example.com">your.email@example.com</a></p>
+                        <p><a href="mailto:contact@nix-shadow.com">contact@nix-shadow.com</a></p>
                     </div>
                 </div>
                 <div class="contact-item">
                     <i class="fas fa-map-marker-alt"></i>
                     <div>
                         <h3>Location</h3>
-                        <p>City, Country</p>
+                        <p>Remote | Available Worldwide</p>
                     </div>
                 </div>
                 <div class="contact-item">
-                    <i class="fas fa-phone-alt"></i>
+                    <i class="fas fa-key"></i>
                     <div>
-                        <h3>Phone</h3>
-                        <p><a href="tel:+1234567890">(123) 456-7890</a></p>
+                        <h3>PGP Key</h3>
+                        <p><a href="#">Download Public Key</a></p>
                     </div>
                 </div>
             </div>
@@ -250,6 +314,10 @@
                     <label for="message">Message</label>
                     <textarea id="message" name="message" rows="5" required></textarea>
                 </div>
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="encrypt" name="encrypt">
+                    <label for="encrypt">Encrypt with PGP key</label>
+                </div>
                 <button type="submit" class="btn primary-btn">Send Message</button>
             </form>
         </div>
@@ -259,15 +327,17 @@
 <footer>
     <div class="container">
         <div class="footer-content">
-            <div class="footer-logo">Portfolio</div>
+            <div class="footer-logo"><span class="terminal-prompt">$</span> nix-shadow</div>
             <div class="footer-social">
-                <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://twitter.com/yourusername" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://github.com/nix-shadow" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/nix-shadow" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://twitter.com/nix_shadow" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://tryhackme.com/p/nix-shadow" target="_blank"><i class="fas fa-flag"></i></a>
+                <a href="https://hackthebox.com/profile/nix-shadow" target="_blank"><i class="fas fa-cube"></i></a>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2025 Your Name. All Rights Reserved.</p>
+            <p class="terminal-style">&copy; 2025 nix-shadow. <span class="blink">_</span></p>
         </div>
     </div>
 </footer>
